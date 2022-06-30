@@ -4,16 +4,16 @@
 ///  Cài đặt 3proxy , cái này chỉ cần cài đặt 1 lần đầu khi chạy vps mới
 
 sudo yum install wget
-wget https://raw.githubusercontent.com/nvtinh368/bashproxy/master/setup_3proxy.sh
+wget https://raw.githubusercontent.com/nvtinh368/scriptPX/master/setup_3proxy.sh
 chmod +x setup_3proxy.sh
 bash setup_3proxy.sh
 
 /// -----------------------Tạo IPV6 Tĩnh
 
 mkdir /home/bkns && cd /home/bkns/ 
-wget https://raw.githubusercontent.com/nvtinh368/bashproxy/master/config_new.sh
-wget https://raw.githubusercontent.com/nvtinh368/bashproxy/master/config_rotating.sh
-wget https://raw.githubusercontent.com/nvtinh368/bashproxy/master/config_user.sh
+wget https://raw.githubusercontent.com/nvtinh368/scriptPX/master/config_new.sh
+wget https://raw.githubusercontent.com/nvtinh368/scriptPX/master/config_rotating.sh
+wget https://raw.githubusercontent.com/nvtinh368/scriptPX/master/config_user.sh
 chmod +x config_new.sh
 chmod +x config_rotating.sh
 chmod +x config_user.sh
