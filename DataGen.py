@@ -2,8 +2,8 @@ import random
 import string
 
 startPort = 22500
-endPort = 22502 + 1
-ipv4 = '14.24.34.333'
+endPort = 22509 + 1
+ipv4 = '143.198.70.189'
 
 
 def GeneatorPass():
@@ -14,7 +14,7 @@ def GeneratorIPv6Part(n):
     return ''.join(random.choices(array, k=n))
 
 def GeneratorIPv6():
-    ipv6 = f'2403:6a40:2:{GeneratorIPv6Part(4)}:{GeneratorIPv6Part(4)}:{GeneratorIPv6Part(4)}:{GeneratorIPv6Part(4)}:{GeneratorIPv6Part(4)}'
+    ipv6 = f'2001:470:66:1fa:{GeneratorIPv6Part(4)}:{GeneratorIPv6Part(4)}:{GeneratorIPv6Part(4)}:{GeneratorIPv6Part(4)}'
     return ipv6
 
 proxyFile = open('data\proxy.txt','w')

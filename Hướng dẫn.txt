@@ -26,6 +26,7 @@ bash config_new.sh
 
 
 // -----------------------Tạo IPV6 Xoay
+// chỉnh sửa rotating lại cho đúng với cấu hình ip và port
 bash config_rotating.sh
 vi back.sh
 while true; do bash script.sh;date ; sleep 600; done

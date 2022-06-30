@@ -69,3 +69,4 @@ bash config_add.sh
 bash config_iptables.sh
 ulimit -n 10048
 /usr/local/etc/3proxy/bin/3proxy /usr/local/etc/3proxy/3proxy.cfg  # đoi ten 
+gen_proxy_file_for_user

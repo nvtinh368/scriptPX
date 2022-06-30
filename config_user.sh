@@ -62,3 +62,4 @@ chmod +x /usr/local/etc/3proxy/3proxy.cfg # doi ten
 bash config_add.sh
 ulimit -n 10048
 /usr/local/etc/3proxy/bin/3proxy /usr/local/etc/3proxy/3proxy.cfg  # đoi ten 
+gen_proxy_file_for_user
