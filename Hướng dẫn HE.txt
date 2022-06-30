@@ -40,3 +40,10 @@ while true; do bash config_rotating_he;date ; sleep 600; done
 chỉnh sửa DataGen -> data\data.txt -> Thay đổi vị trí data mới với vị trí data cũ-> copy text rồi paste vào để nó tạo file data.txt
 
 bash config_user_he.sh
+
+
+// Đẩy proxy lên mạng
+
+zip --password tinh1234 proxy.zip proxy.txt
+
+curl -s --upload-file proxy.zip https://transfer.sh/proxy.zip
