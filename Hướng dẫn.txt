@@ -18,7 +18,7 @@ chmod +x config_new.sh
 chmod +x config_rotating.sh
 chmod +x config_user.sh
 
-Bật DataGen -> data\data.txt -> copy text rồi paste vào để nó tạo file data.txt
+chỉnh sửa DataGen -> data\data.txt -> copy text rồi paste vào để nó tạo file data.txt
 
 bash config_new.sh
 
@@ -37,6 +37,6 @@ while true; do bash script.sh;date ; sleep 600; done
 
 // -----------------------Đổi user và ip khi hết hạn proxy
 
-Bật DataGen -> data\data.txt -> Thay đổi vị trí data mới với vị trí data cũ-> copy text rồi paste vào để nó tạo file data.txt
+chỉnh sửa DataGen -> data\data.txt -> Thay đổi vị trí data mới với vị trí data cũ-> copy text rồi paste vào để nó tạo file data.txt
 
 bash config_user.sh

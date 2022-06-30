@@ -60,6 +60,13 @@ chmod +x /usr/local/etc/3proxy/3proxy.cfg # doi ten
 
 # Thuc hien chay
 bash config_add.sh
+PIN=$(ps -ax | awk '{print $1";"$6}' |grep 3proxy.cfg ) # doi ten
+arrIN=(${PIN//'\n'/ })
+for i in ${arrIN[@]}
+do
+ arrPI=(${i//;/ })
+ kill -9 ${arrPI[0]}
+done
 ulimit -n 10048
 /usr/local/etc/3proxy/bin/3proxy /usr/local/etc/3proxy/3proxy.cfg  # đoi ten 
 gen_proxy_file_for_user
