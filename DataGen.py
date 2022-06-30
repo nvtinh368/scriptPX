@@ -1,8 +1,8 @@
 import random
 import string
 
-startPort = 22500
-endPort = 22509 + 1
+startPort = 22610
+endPort = 22619 + 1
 ipv4 = '143.198.67.182'
 
 

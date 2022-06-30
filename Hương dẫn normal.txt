@@ -29,7 +29,7 @@ bash config_new.sh
 // chỉnh sửa rotating lại cho đúng với cấu hình ip và port
 bash config_rotating.sh
 vi back.sh
-while true; do bash script.sh;date ; sleep 600; done
+while true; do bash config_rotating.sh;date ; sleep 600; done
 + nohup bash back.sh &
 + pkill -f back.sh
 

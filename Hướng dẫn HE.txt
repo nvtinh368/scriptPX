@@ -14,22 +14,22 @@ mkdir /home/bkns && cd /home/bkns/
 wget https://raw.githubusercontent.com/nvtinh368/scriptPX/master/config_new_he.sh
 wget https://raw.githubusercontent.com/nvtinh368/scriptPX/master/config_rotating_he.sh
 wget https://raw.githubusercontent.com/nvtinh368/scriptPX/master/config_user_he.sh
-chmod +x config_new.sh
-chmod +x config_rotating.sh
-chmod +x config_user.sh
+chmod +x config_new_he.sh
+chmod +x config_rotating_he.sh
+chmod +x config_user_he.sh
 
 chỉnh sửa DataGen -> data\data.txt -> copy text rồi paste vào để nó tạo file data.txt
 
-bash config_new.sh
+bash config_new_he.sh
 
 
 
 
 // -----------------------Tạo IPV6 Xoay
 // chỉnh sửa rotating lại cho đúng với cấu hình ip và port
-bash config_rotating.sh
+bash config_rotating_he.sh
 vi back.sh
-while true; do bash script.sh;date ; sleep 600; done
+while true; do bash config_rotating_he;date ; sleep 600; done
 + nohup bash back.sh &
 + pkill -f back.sh
 
@@ -39,4 +39,4 @@ while true; do bash script.sh;date ; sleep 600; done
 
 chỉnh sửa DataGen -> data\data.txt -> Thay đổi vị trí data mới với vị trí data cũ-> copy text rồi paste vào để nó tạo file data.txt
 
-bash config_user.sh
+bash config_user_he.sh
