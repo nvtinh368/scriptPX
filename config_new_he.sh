@@ -4,7 +4,7 @@ WORKDATA="data.txt"
 #doi eth0
 gen_ifconfig() {
     cat <<EOF
-$(awk -F "/" '{print "ifconfig he-ipv6 inet6 add " $5 "/64"}' ${WORKDATA})
+$(awk -F "/" '{print "ifconfig he-ipv6 inet6 add " $5 "/56"}' ${WORKDATA})
 EOF
 }
 
@@ -12,7 +12,7 @@ EOF
 # doi eth0 
 gen_ifconfigdel() {
     cat <<EOF
-    $(awk -F "/" '{print "ifconfig he-ipv6 inet6 del " $5 "/64"}' ${WORKDATA}) 
+    $(awk -F "/" '{print "ifconfig he-ipv6 inet6 del " $5 "/56"}' ${WORKDATA}) 
 EOF
 }
 

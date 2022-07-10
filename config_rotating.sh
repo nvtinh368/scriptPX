@@ -57,20 +57,20 @@ gen_data() {
 
 gen_ifconfigdel1() {
     cat <<EOF
-    $(awk -F "/" '{print "ifconfig eth0 inet6 del " $5 "/64"}' ${WORKDATA}) 
+    $(awk -F "/" '{print "ifconfig eth0 inet6 del " $5 "/56"}' ${WORKDATA}) 
 EOF
 }
 
 gen_ifconfigdel() {
     cat <<EOF
-    $(awk -F "/" '{print "ifconfig eth0 inet6 del " $5 "/64"}' ${WORKDATA1}) 
+    $(awk -F "/" '{print "ifconfig eth0 inet6 del " $5 "/56"}' ${WORKDATA1}) 
 EOF
 }
 
 
 gen_ifconfig() {
     cat <<EOF
-$(awk -F "/" '{print "ifconfig eth0 inet6 add " $5 "/64"}' ${WORKDATA1})
+$(awk -F "/" '{print "ifconfig eth0 inet6 add " $5 "/56"}' ${WORKDATA1})
 EOF
 }
 
